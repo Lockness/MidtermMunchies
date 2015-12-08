@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tasty: Recipe = Recipe(name: "Chicken", description: "Good chicken")
+        print(tasty.name)
+        print(tasty.description)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
