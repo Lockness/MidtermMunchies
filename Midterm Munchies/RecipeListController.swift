@@ -10,41 +10,59 @@ import UIKit
 
 class RecipeListController: UITableViewController {
 
-    var recipeList: [Recipe]
     
+    // Initialize Recipe List
+    var recipeList: [Recipe]
     required init?(coder aDecoder: NSCoder) {
     
         recipeList = [Recipe]()
     
+        // Insert Recipes into recipe list (eventually parse json)
         let recipe1: Recipe = Recipe(name: "Chicken", description: "Good chicken")
         recipeList.append(recipe1)
         
         let recipe2: Recipe = Recipe(name: "Steak", description: "Great Steak")
         recipeList.append(recipe2)
         
-        print(recipe1.name)
-        print(recipe1.description)
-    
-        print(recipe2.name)
-        print(recipe2.description)
-        
         super.init(coder: aDecoder)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set nav bar colors
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.BlackOpaque
+        nav?.tintColor = UIColor.redColor()
+        
+        // Set tab bar colors
+        let tabBar = self.tabBarController?.tabBar
+        tabBar?.barStyle = UIBarStyle.BlackOpaque
+        tabBar?.tintColor = UIColor.redColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+//    override func viewDidAppear(animated: Bool) {
+//        let nav = self.navigationController?.navigationBar
+//        nav?.barStyle = UIBarStyle.BlackOpaque
+//        nav?.tintColor = UIColor.redColor()
+//        
+//        let tabBar = self.tabBarController?.tabBar
+//        tabBar?.barStyle = UIBarStyle.BlackOpaque
+//        tabBar?.tintColor = UIColor.redColor()
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    // Returns total number of rows in recipe list
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipeList.count
     }
     
+    // Sets the visible cells to the appropriate recipe from the list
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeTableItem")! as UITableViewCell
         let recipe = recipeList[indexPath.row]
@@ -54,6 +72,7 @@ class RecipeListController: UITableViewController {
         return cell
     }
     
+    // Sets the title of the recipe for a given visible cell
     func setTitleForCell(cell: UITableViewCell, withRecipetItem recipe: Recipe) {
         let label = cell.viewWithTag(1) as! UILabel
         label.text = recipe.name

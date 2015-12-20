@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-984" y="205"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--TabBarController-->
         <scene sceneID="Vdh-8v-NKN">
             <objects>
-                <tabBarController id="c1v-92-mUW" sceneMemberID="viewController">
+                <tabBarController title="TabBarController" id="c1v-92-mUW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lHY-rq-kA0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="pcr-Fx-U0a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="36" y="570"/>
         </scene>
-        <!--Recipes-->
+        <!--RecipeListController-->
         <scene sceneID="Jfo-l6-3UF">
             <objects>
-                <tableViewController id="UdP-2w-LrU" customClass="RecipeListController" customModule="Midterm_Munchies" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="RecipeListController" id="UdP-2w-LrU" customClass="RecipeListController" customModule="Midterm_Munchies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LX0-QN-8N8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="36" y="-50"/>
         </scene>
-        <!--View Controller-->
+        <!--RecipeViewController-->
         <scene sceneID="dET-Jf-10k">
             <objects>
-                <viewController id="WcV-2N-q2W" sceneMemberID="viewController">
+                <viewController title="RecipeViewController" id="WcV-2N-q2W" customClass="RecipeViewController" customModule="Midterm_Munchies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="luw-Vm-S1b"/>
                         <viewControllerLayoutGuide type="bottom" id="Qtb-Kw-G0A"/>
