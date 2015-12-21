@@ -15,7 +15,6 @@
 		1649259B1C16853600F4FD31 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649259A1C16853600F4FD31 /* Recipe.swift */; };
 		1649259D1C1686E400F4FD31 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649259C1C1686E400F4FD31 /* Ingredient.swift */; };
 		D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45500A51C27338A003EB8AF /* RecipeViewController.swift */; };
-		D45500A81C27348C003EB8AF /* Apple_Swift_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D45500A71C27348C003EB8AF /* Apple_Swift_Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		1649259A1C16853600F4FD31 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		1649259C1C1686E400F4FD31 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		D45500A51C27338A003EB8AF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
-		D45500A71C27348C003EB8AF /* Apple_Swift_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apple_Swift_Logo.png; path = ../../../Downloads/Apple_Swift_Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 		164925871C1684D700F4FD31 /* Midterm Munchies */ = {
 			isa = PBXGroup;
 			children = (
-				D45500A71C27348C003EB8AF /* Apple_Swift_Logo.png */,
 				164925881C1684D700F4FD31 /* AppDelegate.swift */,
 				1649258A1C1684D800F4FD31 /* RecipeListController.swift */,
 				D45500A51C27338A003EB8AF /* RecipeViewController.swift */,
@@ -136,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				164925931C1684D800F4FD31 /* LaunchScreen.storyboard in Resources */,
-				D45500A81C27348C003EB8AF /* Apple_Swift_Logo.png in Resources */,
 				164925901C1684D800F4FD31 /* Assets.xcassets in Resources */,
 				1649258E1C1684D800F4FD31 /* Main.storyboard in Resources */,
 			);
