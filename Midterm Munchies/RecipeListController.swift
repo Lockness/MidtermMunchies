@@ -89,7 +89,7 @@ class RecipeListController: UITableViewController {
         
         let recipeViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RecipeViewController") as! RecipeViewController
 
-        recipeViewController.recipeName.text = recipePressed.name
+        //recipeViewController.recipeName.text = recipePressed.name
         
         performSegueWithIdentifier("listToRecipeSegue", sender: nil)
         
