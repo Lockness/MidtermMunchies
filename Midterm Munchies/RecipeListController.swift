@@ -88,11 +88,10 @@ class RecipeListController: UITableViewController {
         let recipePressed: Recipe = recipeList[indexPath.row]
         
         let recipeViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RecipeViewController") as! RecipeViewController
-        self.navigationController?.presentViewController(recipeViewController, animated: true, completion: nil)
 
-        
         recipeViewController.recipeName.text = recipePressed.name
         
+        performSegueWithIdentifier("listToRecipeSegue", sender: nil)
         
     }
     
