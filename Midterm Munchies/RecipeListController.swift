@@ -85,13 +85,14 @@ class RecipeListController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let recipePressed = recipeList[indexPath.row]
+        let recipePressed: Recipe = recipeList[indexPath.row]
         
         let recipeViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RecipeViewController") as! RecipeViewController
-        
-        recipeViewController.recipeName.text = String(recipePressed.name)
-        
         self.navigationController?.presentViewController(recipeViewController, animated: true, completion: nil)
+
+        
+        recipeViewController.recipeName.text = recipePressed.name
+        
         
     }
     
