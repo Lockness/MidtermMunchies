@@ -30,15 +30,20 @@ class RecipeListController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set nav bar colors
-        let nav = self.navigationController?.navigationBar
-        nav?.barStyle = UIBarStyle.BlackOpaque
-        nav?.tintColor = UIColor.redColor()
+//        let logo = UIImage(named: "Apple_Swift_Logo.png")
+//        let imageView = UIImageView(image:logo)
+//        self.navigationItem.titleView = imageView
+//        
+//        // Set nav bar colors
+//        let nav = self.navigationController?.navigationBar
+//        nav?.barStyle = UIBarStyle.BlackOpaque
+//        nav?.tintColor = UIColor.redColor()
+//        
+//        // Set tab bar colors
+//        let tabBar = self.tabBarController?.tabBar
+//        tabBar?.barStyle = UIBarStyle.BlackOpaque
+//        tabBar?.tintColor = UIColor.redColor()
         
-        // Set tab bar colors
-        let tabBar = self.tabBarController?.tabBar
-        tabBar?.barStyle = UIBarStyle.BlackOpaque
-        tabBar?.tintColor = UIColor.redColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -77,6 +82,19 @@ class RecipeListController: UITableViewController {
         let label = cell.viewWithTag(1) as! UILabel
         label.text = recipe.name
     }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let recipePressed = recipeList[indexPath.row]
+        
+        let recipeViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RecipeViewController") as! RecipeViewController
+        
+        recipeViewController.recipeName.text = String(recipePressed.name)
+        
+        self.navigationController?.presentViewController(recipeViewController, animated: true, completion: nil)
+        
+    }
+    
 
 
 }
