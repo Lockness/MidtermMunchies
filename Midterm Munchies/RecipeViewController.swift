@@ -12,15 +12,20 @@ class RecipeViewController: UIViewController {
 
     @IBOutlet weak var recipeName: UILabel!
     
+    var recipeTitleLabel = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.tabBarController?.tabBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func setRecipeTitle(name: String) {
+        recipeTitleLabel = name
+        recipeName.text = name
     }
     
 
