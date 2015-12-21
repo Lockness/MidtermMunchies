@@ -17,11 +17,8 @@ class Recipe {
     var cookingTimes: CookingTimes?
     var favorite: Bool
     
-    init(name: String, description: String) {
-        self.name = name
-        self.description = description
-        self.instructions = ""
-        self.favorite = false
+    convenience init(name: String, description: String) {
+        self.init(name, ingredients: [], description: description, instructions: "", cookingTimes: CookingTimes(prepTime: 1, cookTime: 2))
     }
     
     init(_ name: String, ingredients: [Ingredient], description: String, instructions: String, cookingTimes: CookingTimes) {
