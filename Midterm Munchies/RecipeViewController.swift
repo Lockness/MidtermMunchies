@@ -10,23 +10,18 @@ import UIKit
 
 class RecipeViewController: UIViewController {
 
-    @IBOutlet weak var recipeName: UILabel!
+    @IBOutlet weak var recipeNameLabel: UILabel!
     
-    var recipeTitleLabel = String()
+    var recipeName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.hidden = true
-        recipeName.text = recipeTitleLabel
+        recipeNameLabel.text = recipeName
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func setRecipeTitle(name: String) {
-        recipeTitleLabel = name
-        recipeName.text = name
     }
     
 

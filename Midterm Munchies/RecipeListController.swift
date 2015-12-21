@@ -56,12 +56,12 @@ class RecipeListController: UITableViewController {
         
         let recipeViewController = segue.destinationViewController as! RecipeViewController
         
-        var recipeTitle : String
+        var recipeName : String
         let recipePressed: Recipe = recipeList[indexPath.row]
         
-        recipeTitle = recipePressed.name
+        recipeName = recipePressed.name
         
-        recipeViewController.recipeTitleLabel = recipeTitle
+        recipeViewController.recipeName = recipeName
         
         
     }
