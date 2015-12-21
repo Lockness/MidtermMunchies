@@ -61,7 +61,7 @@ class RecipeListController: UITableViewController {
         
         recipeTitle = recipePressed.name
         
-        recipeViewController.recipeName.text = recipeTitle
+        recipeViewController.recipeTitleLabel = recipeTitle
         
         
     }

@@ -17,6 +17,7 @@ class RecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.hidden = true
+        recipeName.text = recipeTitleLabel
     }
 
     override func didReceiveMemoryWarning() {
