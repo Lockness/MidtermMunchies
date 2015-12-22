@@ -12,18 +12,22 @@ class RecipeViewController: UIViewController {
 
     @IBOutlet weak var recipeNameLabel: UILabel!
     
-    var recipeName = String()
+    var recipe: Recipe!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.hidden = true
-        recipeNameLabel.text = recipeName
+        recipeNameLabel.text = recipe.name
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func changeFavoriteOnClick(sender: AnyObject) {
+        recipe.favorite = !(recipe.favorite)
+        print(recipe.favorite)
+    }
 
     /*
     // MARK: - Navigation
