@@ -15,6 +15,8 @@
 		1649259B1C16853600F4FD31 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649259A1C16853600F4FD31 /* Recipe.swift */; };
 		1649259D1C1686E400F4FD31 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649259C1C1686E400F4FD31 /* Ingredient.swift */; };
 		D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45500A51C27338A003EB8AF /* RecipeViewController.swift */; };
+		D46FA4B21C2926EA0048659D /* FavoritesRecipeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */; };
+		D4CA4CF21C29345300BE5E84 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1649259A1C16853600F4FD31 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		1649259C1C1686E400F4FD31 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		D45500A51C27338A003EB8AF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesRecipeListController.swift; sourceTree = "<group>"; };
+		D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				164925881C1684D700F4FD31 /* AppDelegate.swift */,
 				1649258A1C1684D800F4FD31 /* RecipeListController.swift */,
+				D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */,
+				D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */,
 				D45500A51C27338A003EB8AF /* RecipeViewController.swift */,
 				1649259A1C16853600F4FD31 /* Recipe.swift */,
 				1649259C1C1686E400F4FD31 /* Ingredient.swift */,
@@ -150,6 +156,8 @@
 				1649258B1C1684D800F4FD31 /* RecipeListController.swift in Sources */,
 				164925891C1684D800F4FD31 /* AppDelegate.swift in Sources */,
 				D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */,
+				D46FA4B21C2926EA0048659D /* FavoritesRecipeListController.swift in Sources */,
+				D4CA4CF21C29345300BE5E84 /* FavoritesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

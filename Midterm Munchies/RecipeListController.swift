@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecipeListController.swift
 //  Midterm Munchies
 //
 //  Created by Justin Carruthers on 12/7/15.
