@@ -14,6 +14,7 @@
 		164925931C1684D800F4FD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164925911C1684D800F4FD31 /* LaunchScreen.storyboard */; };
 		1649259B1C16853600F4FD31 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649259A1C16853600F4FD31 /* Recipe.swift */; };
 		1649259D1C1686E400F4FD31 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649259C1C1686E400F4FD31 /* Ingredient.swift */; };
+		D44209B41C2AA14C0013B974 /* CreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */; };
 		D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45500A51C27338A003EB8AF /* RecipeViewController.swift */; };
 		D46FA4B21C2926EA0048659D /* FavoritesRecipeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */; };
 		D4CA4CF21C29345300BE5E84 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */; };
@@ -29,6 +30,7 @@
 		164925941C1684D800F4FD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1649259A1C16853600F4FD31 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		1649259C1C1686E400F4FD31 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewController.swift; sourceTree = "<group>"; };
 		D45500A51C27338A003EB8AF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesRecipeListController.swift; sourceTree = "<group>"; };
 		D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				164925881C1684D700F4FD31 /* AppDelegate.swift */,
 				1649258A1C1684D800F4FD31 /* RecipeListController.swift */,
 				D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */,
+				D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */,
 				D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */,
 				D45500A51C27338A003EB8AF /* RecipeViewController.swift */,
 				1649259A1C16853600F4FD31 /* Recipe.swift */,
@@ -155,6 +158,7 @@
 				1649259B1C16853600F4FD31 /* Recipe.swift in Sources */,
 				1649258B1C1684D800F4FD31 /* RecipeListController.swift in Sources */,
 				164925891C1684D800F4FD31 /* AppDelegate.swift in Sources */,
+				D44209B41C2AA14C0013B974 /* CreateRecipeViewController.swift in Sources */,
 				D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */,
 				D46FA4B21C2926EA0048659D /* FavoritesRecipeListController.swift in Sources */,
 				D4CA4CF21C29345300BE5E84 /* FavoritesList.swift in Sources */,

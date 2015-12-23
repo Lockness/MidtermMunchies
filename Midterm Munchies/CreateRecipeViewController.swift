@@ -1,34 +1,26 @@
 //
-//  RecipeViewController.swift
+//  CreateRecipeViewController.swift
 //  Midterm Munchies
 //
-//  Created by Ryan Tomlinson on 12/20/15.
+//  Created by Ryan Tomlinson on 12/23/15.
 //  Copyright © 2015 Lockness Software. All rights reserved.
 //
 
 import UIKit
 
-class RecipeViewController: UIViewController {
+class CreateRecipeViewController: UIViewController {
 
-    @IBOutlet weak var recipeNameLabel: UILabel!
-    
-    var recipe: Recipe!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.hidden = true
-        recipeNameLabel.text = recipe.name
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func changeFavoriteOnClick(sender: AnyObject) {
-        recipe.favorite = !(recipe.favorite)
-        //self.navigationController?.navigationItem.rightBarButtonItem?.image = UIImage named:
-        print(recipe.favorite)
-    }
 
     /*
     // MARK: - Navigation

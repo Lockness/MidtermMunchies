@@ -114,16 +114,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrq-DT-PdG">
-                                <rect key="frame" x="266" y="485" width="22" height="22"/>
-                                <connections>
-                                    <action selector="changeFavoriteOnClick:" destination="6RO-hR-sHQ" eventType="touchUpInside" id="Kpl-bT-9IY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="odz-If-oD3"/>
+                    <navigationItem key="navigationItem" id="odz-If-oD3">
+                        <barButtonItem key="rightBarButtonItem" image="Favorites" id="U8n-d8-2O4">
+                            <connections>
+                                <action selector="changeFavoriteOnClick:" destination="6RO-hR-sHQ" id="SXy-Kn-T7T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="recipeNameLabel" destination="n0l-Pr-VGV" id="NFy-An-Ti8"/>
                     </connections>
@@ -161,17 +161,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="9J2-sO-AnL" kind="push" id="CfM-vU-Qgs"/>
+                        <segue destination="9J2-sO-AnL" kind="relationship" relationship="rootViewController" id="D1I-Jd-sg3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7lh-h9-KM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60" y="956"/>
         </scene>
-        <!--View Controller-->
+        <!--CreateRecipeViewController-->
         <scene sceneID="xxf-St-qXv">
             <objects>
-                <viewController id="9J2-sO-AnL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateRecipeViewController" id="9J2-sO-AnL" userLabel="CreateRecipeViewController" customClass="CreateRecipeViewController" customModule="Midterm_Munchies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="erJ-CJ-d80"/>
                         <viewControllerLayoutGuide type="bottom" id="BM5-Mx-Me6"/>
