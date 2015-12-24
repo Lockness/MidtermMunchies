@@ -48,7 +48,7 @@ class Quantity {
     
 }
 
-enum Unit {
+enum Unit : String {
     case Grams
     case Ounces
     case Cups
