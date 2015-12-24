@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class RecipeListController: UITableViewController {
 
     var recipeList: [Recipe]
@@ -16,6 +17,8 @@ class RecipeListController: UITableViewController {
         recipeList = [Recipe]()
         super.init(coder: aDecoder)
         makeTestRecipes()
+        let path = NSBundle.mainBundle().pathForResource("recipe", ofType: "json")
+        parseRecipes(path!)
     }
     
     func makeTestRecipes() {
@@ -110,7 +113,13 @@ class RecipeListController: UITableViewController {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         }
     
-
+    func parseRecipes(atPath: String) {
+        let jsonData = NSData(contentsOfFile: atPath)
+        let json = JSON(data: jsonData!)
+        print(json["recipes", 0, "name"])
+        print(json["recipes", 1, "description"])
+        
+    }
 
 }
 

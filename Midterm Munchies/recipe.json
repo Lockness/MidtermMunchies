@@ -1,0 +1,20 @@
+{
+    "recipes": [
+                { "name": "fried chicken",
+                "description": "A tasty fried chicken dish",
+                "instructions": "Fry the chicken then eat it",
+                "ingredients": [
+                                {"name": "chicken", "quantity": {"amount": "1", "unit": "pound" }},
+                                {"name": "flour", "quantitiy": {"amount": "2", "unit": "cups"}}
+                                ],
+                "cookTimes": {"prepTime": 20, "cookTime": 10}
+                },
+                { "name": "Filet M.",
+                "description": "Best steak you can dream of",
+                "instructions": "Just order this one",
+                "ingredients": [
+                                {"name": "steak", "quantity": {"amount": "1", "unit": "pound" }}
+                                ],
+                "cookTimes": {"prepTime": 0, "cookTime": 10}
+                }]
+}
