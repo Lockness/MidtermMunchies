@@ -118,7 +118,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="odz-If-oD3">
-                        <barButtonItem key="rightBarButtonItem" image="AC0C4B33-8291-4104-9E76-080CEECB2941" id="U8n-d8-2O4">
+                        <barButtonItem key="rightBarButtonItem" image="EC45EBDE-2119-4154-9067-C0C30B1FA4C9" id="U8n-d8-2O4">
                             <connections>
                                 <action selector="changeFavoriteOnClick:" destination="6RO-hR-sHQ" id="SXy-Kn-T7T"/>
                             </connections>
@@ -209,7 +209,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AC0C4B33-8291-4104-9E76-080CEECB2941" width="30" height="30">
+        <image name="Create" width="30" height="30"/>
+        <image name="EC45EBDE-2119-4154-9067-C0C30B1FA4C9" width="30" height="30">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
@@ -339,7 +340,6 @@ QxxSHFYcXRxlHHIcdxx5HHscgByIHIsckByYHJscrRywHLUAAAAAAAACAQAAAAAAAAA+AAAAAAAAAAAA
 AAAAAAActw
 </mutableData>
         </image>
-        <image name="Create" width="30" height="30"/>
         <image name="Favorites" width="30" height="30"/>
         <image name="Recipes" width="30" height="30"/>
     </resources>
