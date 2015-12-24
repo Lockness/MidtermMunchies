@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class RecipeListController: UITableViewController {
 
     var recipeList: [Recipe]
@@ -15,7 +16,9 @@ class RecipeListController: UITableViewController {
     required init?(coder aDecoder: NSCoder) {
         recipeList = [Recipe]()
         super.init(coder: aDecoder)
-        makeTestRecipes()
+        //makeTestRecipes()
+        let path = NSBundle.mainBundle().pathForResource("recipe", ofType: "json")
+        parseRecipes(path!)
     }
     
     func makeTestRecipes() {
@@ -110,7 +113,54 @@ class RecipeListController: UITableViewController {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         }
     
-
+    func parseRecipes(atPath: String) {
+        let jsonData = NSData(contentsOfFile: atPath)
+        let json = JSON(data: jsonData!)
+        
+        for (_, subJson):(String, JSON) in json["recipes"] {
+            let name = String(subJson["name"])
+            let description = String(subJson["description"])
+            let instructions = String(subJson["instructions"])
+            let prepTime = Int(String(subJson["cookTimes", "prepTime"]))
+            let cookTime = Int(String(subJson["cookTimes", "cookTime"]))
+            var ingredients: [Ingredient] = []
+            for (_, ingredientJSON):(String, JSON) in subJson["ingredients"] {
+                let ingredientName = String(ingredientJSON["name"])
+                let amount = Float(String(ingredientJSON["quantity","amount"]))
+                let unitAsString: String = String(ingredientJSON["quantity", "unit"])
+                var unit: Unit?
+                switch (unitAsString){
+                    case "grams":
+                        unit = Unit.Grams
+                        break
+                    case "ounces":
+                        unit = Unit.Ounces
+                        break
+                    case "cups":
+                        unit = Unit.Cups
+                        break
+                    case "pounds":
+                        unit = Unit.Pounds
+                        break
+                    case "teaspoon":
+                        unit = Unit.Teaspoon
+                        break
+                    case "tablespoon":
+                        unit = Unit.Teaspoon
+                        break
+                    default:
+                        break
+                }
+                let quantity = Quantity(amount: amount!, unit: unit!)
+                let ingredient = Ingredient(name: ingredientName, quantity: quantity)
+                ingredients.append(ingredient)
+            }
+            
+            let cookTimes = CookingTimes(prepTime: prepTime!, cookTime: cookTime!)
+            let recipe = Recipe(name, ingredients: ingredients, description: description, instructions: instructions, cookingTimes: cookTimes)
+            recipeList.append(recipe)
+        }
+    }
 
 }
 

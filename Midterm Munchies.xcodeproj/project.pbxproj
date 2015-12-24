@@ -50,6 +50,7 @@
 		1649257C1C1684D700F4FD31 = {
 			isa = PBXGroup;
 			children = (
+				165366771C2C5FE9000E0C7E /* Libraries */,
 				164925871C1684D700F4FD31 /* Midterm Munchies */,
 				164925861C1684D700F4FD31 /* Products */,
 			);
@@ -74,12 +75,21 @@
 				D45500A51C27338A003EB8AF /* RecipeViewController.swift */,
 				1649259A1C16853600F4FD31 /* Recipe.swift */,
 				1649259C1C1686E400F4FD31 /* Ingredient.swift */,
+				1653667A1C2C6063000E0C7E /* recipe.json */,
 				1649258C1C1684D800F4FD31 /* Main.storyboard */,
 				1649258F1C1684D800F4FD31 /* Assets.xcassets */,
 				164925911C1684D800F4FD31 /* LaunchScreen.storyboard */,
 				164925941C1684D800F4FD31 /* Info.plist */,
 			);
 			path = "Midterm Munchies";
+			sourceTree = "<group>";
+		};
+		165366771C2C5FE9000E0C7E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				165366781C2C6028000E0C7E /* SwiftyJSON.swift */,
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +154,7 @@
 				164925931C1684D800F4FD31 /* LaunchScreen.storyboard in Resources */,
 				164925901C1684D800F4FD31 /* Assets.xcassets in Resources */,
 				1649258E1C1684D800F4FD31 /* Main.storyboard in Resources */,
+				1653667B1C2C6063000E0C7E /* recipe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +168,7 @@
 				1649259D1C1686E400F4FD31 /* Ingredient.swift in Sources */,
 				1649259B1C16853600F4FD31 /* Recipe.swift in Sources */,
 				1649258B1C1684D800F4FD31 /* RecipeListController.swift in Sources */,
+				165366791C2C6028000E0C7E /* SwiftyJSON.swift in Sources */,
 				164925891C1684D800F4FD31 /* AppDelegate.swift in Sources */,
 				D44209B41C2AA14C0013B974 /* CreateRecipeViewController.swift in Sources */,
 				D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */,
