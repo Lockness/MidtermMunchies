@@ -11,13 +11,22 @@ import UIKit
 class RecipeViewController: UIViewController {
 
     @IBOutlet weak var recipeNameLabel: UILabel!
-    
+    @IBOutlet weak var favoriteButton: UIBarButtonItem!
+    let favoritesSelectedImage: UIImage = UIImage(named: "FavoritesSelected")!
+    let favoritesImage: UIImage = UIImage(named: "Favorites")!
     var recipe: Recipe!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.hidden = true
         recipeNameLabel.text = recipe.name
+
+        if (recipe.favorite) {
+            favoriteButton.image = favoritesSelectedImage
+        }
+        if (!recipe.favorite) {
+            favoriteButton.image = favoritesImage
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +35,14 @@ class RecipeViewController: UIViewController {
     
     @IBAction func changeFavoriteOnClick(sender: AnyObject) {
         recipe.favorite = !(recipe.favorite)
-        //self.navigationController?.navigationItem.rightBarButtonItem?.image = UIImage named:
         print(recipe.favorite)
+        
+        if (recipe.favorite) {
+            favoriteButton.image = favoritesSelectedImage
+        }
+        if (!recipe.favorite) {
+            favoriteButton.image = favoritesImage
+        }
     }
 
     /*
