@@ -41,6 +41,10 @@ class Recipe {
         self.name = name
     }
     
+    func toString() -> String {
+        return name + " " + description + " " + instructions 
+    }
+    
 }
 
 class CookingTimes {

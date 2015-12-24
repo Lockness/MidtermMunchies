@@ -16,7 +16,7 @@ class RecipeListController: UITableViewController {
     required init?(coder aDecoder: NSCoder) {
         recipeList = [Recipe]()
         super.init(coder: aDecoder)
-        makeTestRecipes()
+        //makeTestRecipes()
         let path = NSBundle.mainBundle().pathForResource("recipe", ofType: "json")
         parseRecipes(path!)
     }
@@ -116,9 +116,18 @@ class RecipeListController: UITableViewController {
     func parseRecipes(atPath: String) {
         let jsonData = NSData(contentsOfFile: atPath)
         let json = JSON(data: jsonData!)
-        print(json["recipes", 0, "name"])
-        print(json["recipes", 1, "description"])
         
+        for (_, subJson):(String, JSON) in json["recipes"] {
+            let name = String(subJson["name"])
+            let description = String(subJson["description"])
+            let instructions = String(subJson["instructions"])
+            let prepTime = Int(String(subJson["cookTimes", "prepTime"]))
+            let cookTime = Int(String(subJson["cookTimes", "cookTime"]))
+            let test: [Ingredient] = []
+            let cookTimes = CookingTimes(prepTime: prepTime!, cookTime: cookTime!)
+            let recipe = Recipe(name, ingredients: test, description: description, instructions: instructions, cookingTimes: cookTimes)
+            recipeList.append(recipe)
+        }
     }
 
 }
