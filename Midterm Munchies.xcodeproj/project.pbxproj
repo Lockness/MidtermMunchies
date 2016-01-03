@@ -19,25 +19,23 @@
 		D44209B41C2AA14C0013B974 /* CreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */; };
 		D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45500A51C27338A003EB8AF /* RecipeViewController.swift */; };
 		D46FA4B21C2926EA0048659D /* FavoritesRecipeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */; };
-		D4CA4CF21C29345300BE5E84 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		164925851C1684D700F4FD31 /* Midterm Munchies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Midterm Munchies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		164925881C1684D700F4FD31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1649258A1C1684D800F4FD31 /* RecipeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListController.swift; sourceTree = "<group>"; };
+		1649258A1C1684D800F4FD31 /* RecipeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipeListController.swift; path = ../RecipeListController.swift; sourceTree = "<group>"; };
 		1649258D1C1684D800F4FD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1649258F1C1684D800F4FD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		164925921C1684D800F4FD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		164925941C1684D800F4FD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1649259A1C16853600F4FD31 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
-		1649259C1C1686E400F4FD31 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		1649259A1C16853600F4FD31 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = "../Midterm Munchies/Recipe.swift"; sourceTree = "<group>"; };
+		1649259C1C1686E400F4FD31 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ingredient.swift; path = "../Midterm Munchies/Ingredient.swift"; sourceTree = "<group>"; };
 		165366781C2C6028000E0C7E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		1653667A1C2C6063000E0C7E /* recipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipe.json; sourceTree = "<group>"; };
-		D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewController.swift; sourceTree = "<group>"; };
-		D45500A51C27338A003EB8AF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
-		D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesRecipeListController.swift; sourceTree = "<group>"; };
-		D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
+		D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateRecipeViewController.swift; path = ../CreateRecipeViewController.swift; sourceTree = "<group>"; };
+		D45500A51C27338A003EB8AF /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeViewController.swift; path = ../RecipeViewController.swift; sourceTree = "<group>"; };
+		D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesRecipeListController.swift; path = ../FavoritesRecipeListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +52,8 @@
 		1649257C1C1684D700F4FD31 = {
 			isa = PBXGroup;
 			children = (
-				165366771C2C5FE9000E0C7E /* Libraries */,
 				164925871C1684D700F4FD31 /* Midterm Munchies */,
+				165366771C2C5FE9000E0C7E /* Libraries */,
 				164925861C1684D700F4FD31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				164925881C1684D700F4FD31 /* AppDelegate.swift */,
-				1649258A1C1684D800F4FD31 /* RecipeListController.swift */,
-				D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */,
-				D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */,
-				D4CA4CF11C29345300BE5E84 /* FavoritesList.swift */,
-				D45500A51C27338A003EB8AF /* RecipeViewController.swift */,
-				1649259A1C16853600F4FD31 /* Recipe.swift */,
-				1649259C1C1686E400F4FD31 /* Ingredient.swift */,
+				16EDFB591C38E1F5001F45CA /* Model */,
+				16EDFB5A1C38E21F001F45CA /* ViewControllers */,
 				1653667A1C2C6063000E0C7E /* recipe.json */,
 				1649258C1C1684D800F4FD31 /* Main.storyboard */,
 				1649258F1C1684D800F4FD31 /* Assets.xcassets */,
@@ -94,6 +87,27 @@
 				165366781C2C6028000E0C7E /* SwiftyJSON.swift */,
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		16EDFB591C38E1F5001F45CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1649259C1C1686E400F4FD31 /* Ingredient.swift */,
+				1649259A1C16853600F4FD31 /* Recipe.swift */,
+			);
+			name = Model;
+			path = ../Model;
+			sourceTree = "<group>";
+		};
+		16EDFB5A1C38E21F001F45CA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1649258A1C1684D800F4FD31 /* RecipeListController.swift */,
+				D46FA4B11C2926EA0048659D /* FavoritesRecipeListController.swift */,
+				D44209B31C2AA14C0013B974 /* CreateRecipeViewController.swift */,
+				D45500A51C27338A003EB8AF /* RecipeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +191,6 @@
 				D44209B41C2AA14C0013B974 /* CreateRecipeViewController.swift in Sources */,
 				D45500A61C27338A003EB8AF /* RecipeViewController.swift in Sources */,
 				D46FA4B21C2926EA0048659D /* FavoritesRecipeListController.swift in Sources */,
-				D4CA4CF21C29345300BE5E84 /* FavoritesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
